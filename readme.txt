@@ -7,11 +7,12 @@ Tested up to: 3.8
 Stable tag: 0.9.10
 License: GPLv2
 
-Check Domain WHOIS Lookup for avalability. Simple insert the [pwhois] shortcode on a page or post
+Check Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post
 
 == Description ==
-Check Domain WHOIS Lookup for avalability. Simple insert the [pwhois] shortcode on a page or post
-To select de default TLD use the default attribute: [pwhois default=com]
+Checks Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post. 
+To select the default TLD use the default attribute: [pwhois default=com] - sets .com as default in the TLD dropdown.
+TLD List is limited because of the knowledge of the required whois servers. If you wish to have support for a special TLD please contact me and I will implement it asap.
 
 = Including: =
 * Shortcode [pwhois]
@@ -44,7 +45,7 @@ Post a comment on [powie.de Forum](http://forum.powie.de))
 Post it at my Forum: [powie.de Forum](http://forum.powie.de)
 
 == Changelog ==
-= 0.9.10 (08.01.2014)
+= 0.9.10 (08.01.2014) =
 * WHOIS server timeout handling
 
 = 0.9.9 (08.01.2014) =
