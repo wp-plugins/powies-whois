@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plinks\n"
+"POT-Creation-Date: 2014-01-08 09:51+0100\n"
+"PO-Revision-Date: 2014-01-08 09:52+0100\n"
+"Last-Translator: Powie <te@powie.de>\n"
+"Language-Team: powie.de <te@powie.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../powies-whois.php:32
+msgid "Powies WHOIS Setup"
+msgstr "Powies WHOIS Einstellungen"
+
+#: ../powies-whois.php:48
+msgid "Domain"
+msgstr "Domain"
+
+#: ../powies-whois.php:57
+msgid "Check"
+msgstr "Prüfen"
+
+#: ../powies-whois.php:59
+msgid "Waiting for domain lookup!"
+msgstr "Suche nach Domain Daten...."
+
+#: ../powies-whois.php:88
+msgid "Please enter Domain"
+msgstr "Bitte gib einen Domain Namen ein"
+
+#: ../powies-whois.php:165
+msgid "Whois Server timeout"
+msgstr "Der WHOIS Server hat nicht geantwortet."
+
+#: ../pwhois_settings.php:3
+msgid "Powies WHOIS Settings"
+msgstr "Powies WHOIS Einstellungen"
+
+#: ../pwhois_settings.php:10
+msgid "Result Settings"
+msgstr "Abfrage Einstellungen"
+
+#: ../pwhois_settings.php:14
+msgid "Show on free domain"
+msgstr "Anzeige bei Domain Status = free"
+
+#: ../pwhois_settings.php:18
+msgid "Show on connected domain"
+msgstr "Anzeige bei Domain Status = connected"
+
+#: ../pwhois_settings.php:22
+msgid "Show on invalid domain"
+msgstr "Anzeige bei Domain Status = invalid"
+
+#: ../pwhois_settings.php:26
+msgid "Remark"
+msgstr "Anmerkung"
+
+#: ../pwhois_settings.php:27
+msgid "The status of free/connected can not be determined with certainty"
+msgstr ""
+"Der Status verfügbar/belegt kann nicht in jedem Fall klar ermittelt werden! "
+"Abweichungen sind möglich."
+
+#: ../pwhois_settings.php:33
+msgid "Save Changes"
+msgstr "Speichern"
+
+#: ../pwhois_settings.php:39
+msgid "pWhois Usage"
+msgstr "Powies WHOIS Benutzung"
+
+#: ../pwhois_settings.php:41
+msgid ""
+"To display the whois form on a page or post insert this shortcode: <code>"
+"[pwhois]</code>"
+msgstr ""
+"Um das WHOIS Abfrage Formular auf einer Seite oder einem Beitrag anzuzeigen: "
+"<code>[pwhois]</code>"
+
+#: ../pwhois_settings.php:43
+msgid ""
+"To select the default TLD use the default parameter: <code>[pwhois "
+"default=com]</code>"
+msgstr ""
+"Um die TLD im Formular festzulegen kann das default Attribut verwendet "
+"werden: <code>[pwhois default=de]</code>"
+
+#: ../pwhois_settings.php:48
+msgid "About"
+msgstr "Über"
+
+#~ msgid "pLinks Setup"
+#~ msgstr "pLinks Setup"
+
+#~ msgid "Thumbnail Settings"
+#~ msgstr "Thumbnail Einstellungen"
+
+#~ msgid "Show Preview Images"
+#~ msgstr "Thumbnail Vorschau anzeigen"
+
+#~ msgid "Thumbnail Image Size"
+#~ msgstr "Thumbnail Bild Größe"
+
+#~ msgid "tiny"
+#~ msgstr "winzig"
+
+#~ msgid "small"
+#~ msgstr "klein"
+
+#~ msgid "medium"
+#~ msgstr "mittel"
+
+#~ msgid "large"
+#~ msgstr "gross"
+
+#~ msgid "extra large"
+#~ msgstr "extra gross"
+
+#~ msgid ""
+#~ "Simple use a shortcode on a page of your choice or create a new page and "
+#~ "insert the following shortcode: <code>[plinks category_name=\"Blogroll\"]"
+#~ "</code>. Use a category that exists!"
+#~ msgstr ""
+#~ "Um eine Liste von Links aus dem Link Verzeichniss anzeigen zu lassen "
+#~ "benutze diesen Shortcode in einem Beitrag oder auf einer Seite: <code>"
+#~ "[plinks category_name=\"Blogroll\"]</code>. Der Kategorie Name soll "
+#~ "natürlich auch existieren!"
+
+#~ msgid ""
+#~ "To display a simple PagePeeker preview: <code>[pagepeeker url=http://www."
+#~ "powie.de]</code>"
+#~ msgstr ""
+#~ "Um eine einzelne PagePeeker Vorschau anzuzeigen:  <code>[pagepeeker "
+#~ "url=http://www.powie.de]</code>"
+
+#~ msgid ""
+#~ "To change the size of the preview image use the <b>size</b> parameter: "
+#~ "<code>[pagepeeker url=http://www.powie.de size=l]</code>"
+#~ msgstr ""
+#~ "Um die Vorschau in einer andere Größe anzeigen zu lassen benutze den "
+#~ "<b>size</b> Parameter:  <code>[pagepeeker url=http://www.powie.de size=l]"
+#~ "</code>"
+
+#~ msgid ""
+#~ "Size is defined by PagePeeker: <code>t</code>, <code>s</code>, <code>m</"
+#~ "code>, <code>l</code>, <code>x</code>"
+#~ msgstr ""
+#~ "<b>Size</b> wird durch PagePeeker vorgegeben: <code>t</code>, <code>s</"
+#~ "code>, <code>m</code>, <code>l</code>, <code>x</code>"
+
+#~ msgid "If no size is defined it uses the settings above!"
+#~ msgstr ""
+#~ "Wenn der size Parameter nicht angegeben wird ist die oben eingestellte "
+#~ "Größe benutzt"
+
+#~ msgid "Happy Linking."
+#~ msgstr "Viel Spass beim Verlinken"
