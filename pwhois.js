@@ -17,6 +17,7 @@ jQuery(document).ready(function(){
 
 function whoispost() {
 	jQuery('#whoissubmit').attr("disabled", true);
+	jQuery("#pwhois_result").html('');
 	jQuery("#pwhois_work").slideToggle(500);
 	jQuery.post(pWhoisAjax.ajaxurl, jQuery("#whois").serialize(), function(data) {
 		if (data.success) {
