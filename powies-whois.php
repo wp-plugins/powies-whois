@@ -3,14 +3,14 @@
 Plugin Name: Powie's WHOIS
 Plugin URI: http://www.powie.de/wordpress
 Description: Domain WHOIS Shortcode Plugin
-Version: 0.9.10
+Version: 0.9.11
 License: GPLv2
 Author: Thomas Ehrhardt
 Author URI: http://www.powie.de
 */
 
 //Define some stuff
-define( 'PWHOIS_VERSION', '0.9.10');
+define( 'PWHOIS_VERSION', '0.9.11');
 define( 'PWHOIS_PLUGIN_DIR', dirname( plugin_basename( __FILE__ ) ) );
 //define( 'PL_PAGEPEEKER_URL', 'http://free.pagepeeker.com/v2/thumbs.php?size=%s&url=%s');
 load_plugin_textdomain( 'pwhois', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -37,6 +37,8 @@ function pwhois_register_settings() {
 	register_setting( 'pwhois-settings', 'display-on-free' );
 	register_setting( 'pwhois-settings', 'display-on-connect' );
 	register_setting( 'pwhois-settings', 'display-on-invalid' );
+	register_setting( 'pwhois-settings', 'show-www' );
+	register_setting( 'pwhois-settings', 'show-whois-output' );
 }
 
 function pwhois_show( $atts ) {
@@ -45,8 +47,11 @@ function pwhois_show( $atts ) {
 	$sc.= '<div id="pwhois_form"><form method="post" id="whois" action="">
 			<input type="hidden" name="action" value="pwhois_post" />';
 	$sc.= wp_nonce_field( 'pwhoisnonce', 'post_nonce', true, false );
-	$sc.= '<legend>'.__('Domain', 'pwhois').'</legend>
-           <input type="text" size="30" name="domain" id="domain" />
+	$sc.= '<legend>'.__('Domain', 'pwhois').'</legend>';
+	if (get_option('show-www') == 1) {
+		$sc.= 'www.';
+	}
+    $sc.= '<input type="text" size="30" name="domain" id="domain" />
 		   <select id="tld" name="tld">';
 	//$sc.='<option '.$selected.' value=".de">.de</option>';
 		foreach($PWHOIS_SERVERS as $ws => $v)	{
@@ -114,7 +119,10 @@ function pwhois_post(){
 			$msg=get_option('display-on-connect');
 		}
 		//Ergebnis liefern
-		$msg = '<p>'.$msg.'</p><code>'.nl2br($result).'</code>';
+		$msg = '<p>'.$msg.'</p>';
+		if (get_option('show-whois-output') == 1) {
+			$msg.='<code>'.nl2br($result).'</code>';
+		}
 		$response = json_encode( array( 'success' => true , 'msg' => $msg ) );
 		header( "Content-Type: application/json" );
 		echo $response;

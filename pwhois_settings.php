@@ -11,6 +11,14 @@ settings_fields( 'pwhois-settings' );
 	<div class="inside">
     <table class="form-table">
         <tr valign="top">
+	        <th scope="row"><?php _e('Show www. before domain field', 'pwhois') ?></th>
+    	    <td><input type="checkbox" name="show-www" id="show-www" value="1" <?php checked(get_option('show-www'), 1); ?> /></td>
+        </tr>
+        <tr valign="top">
+	        <th scope="row"><?php _e('Show whois output in result', 'pwhois') ?></th>
+    	    <td><input type="checkbox" name="show-whois-output" id="show-whois-output" value="1" <?php checked(get_option('show-whois-output'), 1); ?> /></td>
+        </tr>
+        <tr valign="top">
         	<th scope="row"><?php _e('Show on free domain', 'pwhois') ?></th>
         	<td><textarea rows="3" name="display-on-free" style="width:100%;"><?php echo get_option('display-on-free'); ?></textarea></td>
         </tr>

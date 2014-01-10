@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plinks\n"
-"POT-Creation-Date: 2014-01-08 09:51+0100\n"
-"PO-Revision-Date: 2014-01-08 09:52+0100\n"
+"POT-Creation-Date: 2014-01-10 08:18+0100\n"
+"PO-Revision-Date: 2014-01-10 08:19+0100\n"
 "Last-Translator: Powie <te@powie.de>\n"
 "Language-Team: powie.de <te@powie.de>\n"
 "Language: de_DE\n"
@@ -18,23 +18,23 @@ msgstr ""
 msgid "Powies WHOIS Setup"
 msgstr "Powies WHOIS Einstellungen"
 
-#: ../powies-whois.php:48
+#: ../powies-whois.php:50
 msgid "Domain"
 msgstr "Domain"
 
-#: ../powies-whois.php:57
+#: ../powies-whois.php:62
 msgid "Check"
 msgstr "Prüfen"
 
-#: ../powies-whois.php:59
+#: ../powies-whois.php:64
 msgid "Waiting for domain lookup!"
 msgstr "Suche nach Domain Daten...."
 
-#: ../powies-whois.php:88
+#: ../powies-whois.php:93
 msgid "Please enter Domain"
 msgstr "Bitte gib einen Domain Namen ein"
 
-#: ../powies-whois.php:165
+#: ../powies-whois.php:173
 msgid "Whois Server timeout"
 msgstr "Der WHOIS Server hat nicht geantwortet."
 
@@ -47,36 +47,44 @@ msgid "Result Settings"
 msgstr "Abfrage Einstellungen"
 
 #: ../pwhois_settings.php:14
+msgid "Show www. before domain field"
+msgstr "Zeige www. vor Domain Eingabefeld"
+
+#: ../pwhois_settings.php:18
+msgid "Show whois output in result"
+msgstr "Zeige WHOIS Server Ausgabe im Ergebnis"
+
+#: ../pwhois_settings.php:22
 msgid "Show on free domain"
 msgstr "Anzeige bei Domain Status = free"
 
-#: ../pwhois_settings.php:18
+#: ../pwhois_settings.php:26
 msgid "Show on connected domain"
 msgstr "Anzeige bei Domain Status = connected"
 
-#: ../pwhois_settings.php:22
+#: ../pwhois_settings.php:30
 msgid "Show on invalid domain"
 msgstr "Anzeige bei Domain Status = invalid"
 
-#: ../pwhois_settings.php:26
+#: ../pwhois_settings.php:34
 msgid "Remark"
 msgstr "Anmerkung"
 
-#: ../pwhois_settings.php:27
+#: ../pwhois_settings.php:35
 msgid "The status of free/connected can not be determined with certainty"
 msgstr ""
 "Der Status verfügbar/belegt kann nicht in jedem Fall klar ermittelt werden! "
 "Abweichungen sind möglich."
 
-#: ../pwhois_settings.php:33
+#: ../pwhois_settings.php:41
 msgid "Save Changes"
 msgstr "Speichern"
 
-#: ../pwhois_settings.php:39
+#: ../pwhois_settings.php:47
 msgid "pWhois Usage"
 msgstr "Powies WHOIS Benutzung"
 
-#: ../pwhois_settings.php:41
+#: ../pwhois_settings.php:49
 msgid ""
 "To display the whois form on a page or post insert this shortcode: <code>"
 "[pwhois]</code>"
@@ -84,7 +92,7 @@ msgstr ""
 "Um das WHOIS Abfrage Formular auf einer Seite oder einem Beitrag anzuzeigen: "
 "<code>[pwhois]</code>"
 
-#: ../pwhois_settings.php:43
+#: ../pwhois_settings.php:51
 msgid ""
 "To select the default TLD use the default parameter: <code>[pwhois "
 "default=com]</code>"
@@ -92,7 +100,7 @@ msgstr ""
 "Um die TLD im Formular festzulegen kann das default Attribut verwendet "
 "werden: <code>[pwhois default=de]</code>"
 
-#: ../pwhois_settings.php:48
+#: ../pwhois_settings.php:56
 msgid "About"
 msgstr "Über"
 

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: domain,lookup,whois,shortcode
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 0.9.10
+Stable tag: 0.9.11
 License: GPLv2
 
 Check Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post
@@ -45,12 +45,15 @@ Post a comment on [powie.de Forum](http://forum.powie.de))
 Post it at my Forum: [powie.de Forum](http://forum.powie.de)
 
 == Changelog ==
+= 0.9.11 (10.01.2014) =
+* Setting for showing www. in front of the input field
+* Setting to enable or disable plain whois output
+
 = 0.9.10 (08.01.2014) =
 * WHOIS server timeout handling
 
 = 0.9.9 (08.01.2014) =
 * Initial Version
-
 
 == Upgrade Notice ==
 Simple install the new version
