@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: domain,lookup,whois,shortcode
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 0.9.12
+Stable tag: 0.9.13
 License: GPLv2
 
 Check Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post
@@ -18,7 +18,8 @@ TLD List is limited because of the knowledge of the required whois servers. If y
 * Shortcode [pwhois]
 
 = Support =
-Support Forum @ [powie.de](http://goo.gl/lfR7B)
+Support Forum @ [powie.de](http://goo.gl/lfR7B) 
+You get faster feedback if you post in our forum, rather than on wordpress.org!
 
 == Installation ==
 1. Upload this Plugin to the `/wp-content/plugins/` directory
@@ -45,6 +46,9 @@ Post a comment on [powie.de Forum](http://forum.powie.de))
 Post it at my Forum: [powie.de Forum](http://forum.powie.de)
 
 == Changelog ==
+= 0.9.13 (16.01.2014) =
+* Optimized handling on .com whois lookups
+
 = 0.9.12 (14.01.2014) =
 * Fixed Bug on nonpriv ajax handling
 
