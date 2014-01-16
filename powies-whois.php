@@ -151,8 +151,8 @@ class psWhois{
 			if ( preg_match("/Whois Server: (.*)/", $res, $matches) == 1 ) {
 				//echo "Suche mit ".$matches[1];
 				$res=$this->queryWhois($matches[1],$domain);
-				return $res;
 			}
+			return $res;
 		}
 		else
 			return "Invalid Input";
