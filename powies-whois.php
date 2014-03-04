@@ -3,14 +3,14 @@
 Plugin Name: Powie's WHOIS
 Plugin URI: http://www.powie.de/wordpress
 Description: Domain WHOIS Shortcode Plugin
-Version: 0.9.13
+Version: 0.9.14
 License: GPLv2
 Author: Thomas Ehrhardt
 Author URI: http://www.powie.de
 */
 
 //Define some stuff
-define( 'PWHOIS_VERSION', '0.9.13');
+define( 'PWHOIS_VERSION', '0.9.14');
 define( 'PWHOIS_PLUGIN_DIR', dirname( plugin_basename( __FILE__ ) ) );
 //define( 'PL_PAGEPEEKER_URL', 'http://free.pagepeeker.com/v2/thumbs.php?size=%s&url=%s');
 load_plugin_textdomain( 'pwhois', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -116,6 +116,8 @@ function pwhois_post(){
 			$msg=get_option('display-on-free');
 		} elseif (stristr($result,'not found')) {
 			$msg=get_option('display-on-free');
+		} elseif (stristr($result,'nothing found')) {
+			$msg=get_option('display-on-free');
 		} elseif (stristr($result,'Status: invalid')) {
 			$msg=get_option('display-on-invalid');
 		} else {
@@ -129,9 +131,8 @@ function pwhois_post(){
 		$response = json_encode( array( 'success' => true , 'msg' => $msg ) );
 		header( "Content-Type: application/json" );
 		echo $response;
-	die();
+		die();
 }
-
 class psWhois{
 	public function lookup($domain,$whoisservers) {
 		$domain = trim($domain); //remove space from start and end of domain
