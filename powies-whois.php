@@ -3,7 +3,7 @@
 Plugin Name: Powie's WHOIS
 Plugin URI: http://www.powie.de/wordpress
 Description: Domain WHOIS Shortcode Plugin
-Version: 0.9.14
+Version: 0.9.15
 License: GPLv2
 Author: Thomas Ehrhardt
 Author URI: http://www.powie.de
@@ -115,6 +115,8 @@ function pwhois_post(){
 		} elseif (stristr($result,'no match')) {
 			$msg=get_option('display-on-free');
 		} elseif (stristr($result,'not found')) {
+			$msg=get_option('display-on-free');
+		} elseif (stristr($result,'no existe')) {
 			$msg=get_option('display-on-free');
 		} elseif (stristr($result,'nothing found')) {
 			$msg=get_option('display-on-free');
@@ -243,7 +245,7 @@ $PWHOIS_SERVERS = array(
 "bz"                =>  array("whois.belizenic.bz"),
 "cd"                =>  array("whois.nic.cd"),
 "ck"                =>  array("whois.nic.ck"),
-"cl"                =>  array("nic.cl"),
+"cl"                =>  array("whois.nic.cl"),
 "coop"              =>  array("whois.nic.coop"),
 "cx"                =>  array("whois.nic.cx"),
 "cy"                =>  array("whois.ripe.net"),
@@ -321,7 +323,8 @@ $PWHOIS_SERVERS = array(
 "vc"                =>  array("whois2.afilias-grs.net"),
 "ve"                =>  array("whois.nic.ve"),
 "vg"                =>  array("whois.adamsnames.tc"),
-"yu"                =>  array("whois.ripe.net")
+"yu"                =>  array("whois.ripe.net"),
+"za"                =>  array("whois.registry.net.za")
 );
 
 ?>
