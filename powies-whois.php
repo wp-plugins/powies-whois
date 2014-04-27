@@ -3,7 +3,7 @@
 Plugin Name: Powie's WHOIS
 Plugin URI: http://www.powie.de/wordpress
 Description: Domain WHOIS Shortcode Plugin
-Version: 0.9.15
+Version: 0.9.16
 License: GPLv2
 Author: Thomas Ehrhardt
 Author URI: http://www.powie.de
@@ -110,8 +110,8 @@ function pwhois_post(){
 		//testen
 		if (stristr($result,'Status: free')) {
 			$msg=get_option('display-on-free');
-		} elseif (stristr($result,'available')) {
-			$msg=get_option('display-on-free');
+		//} elseif (stristr($result,'available')) {
+		//	$msg=get_option('display-on-free');
 		} elseif (stristr($result,'no match')) {
 			$msg=get_option('display-on-free');
 		} elseif (stristr($result,'not found')) {

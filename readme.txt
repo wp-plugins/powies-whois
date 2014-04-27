@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: domain,lookup,whois,shortcode
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 0.9.15
+Stable tag: 0.9.16
 License: GPLv2
 
 Check Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post
@@ -46,6 +46,9 @@ Post a comment on [powie.de Forum](http://forum.powie.de))
 Post it at my Forum: [powie.de Forum](http://forum.powie.de)
 
 == Changelog ==
+= 0.9.16 (26.04.2014) =
+* Changed available status check
+
 = 0.9.15 (26.04.2014) =
 * Added .za lookups
 
