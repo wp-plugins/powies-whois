@@ -14,6 +14,9 @@ Checks Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcod
 To select the default TLD use the default attribute: [pwhois default=com] - sets .com as default in the TLD dropdown.
 TLD List is limited because of the knowledge of the required whois servers. If you wish to have support for a special TLD please contact me and I will implement it asap.
 
+= Demos =
+[Demo 1](http://www.be-webspace.de/domaincheck/)
+
 = Including: =
 * Shortcode [pwhois]
 
