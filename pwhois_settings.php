@@ -30,6 +30,16 @@ settings_fields( 'pwhois-settings' );
         	<th scope="row"><?php _e('Show on invalid domain', 'pwhois') ?></th>
         	<td><textarea rows="3" name="display-on-invalid" style="width:100%;"><?php echo get_option('display-on-invalid'); ?></textarea></td>
         </tr>
+
+        <tr valign="top">
+        	<th scope="row"><?php _e('HTML before whois output', 'pwhois') ?></th>
+        	<td><input type="text" name="before-whois-output" value="<?php echo get_option('before-whois-output'); ?>" style="width:100%;" /></td>
+        </tr>
+        <tr valign="top">
+        	<th scope="row"><?php _e('HTML after whois output', 'pwhois') ?></th>
+        	<td><input type="text" name="after-whois-output" value="<?php echo get_option('after-whois-output'); ?>" style="width:100%;"/></td>
+        </tr>
+
         <tr valign="top">
         	<th scope="row"><?php _e('Remark', 'pwhois') ?></th>
         	<td><?php _e('The status of free/connected can not be determined with certainty', 'pwhois') ?></td>

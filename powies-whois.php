@@ -3,16 +3,15 @@
 Plugin Name: Powie's WHOIS
 Plugin URI: http://www.powie.de/wordpress
 Description: Domain WHOIS Shortcode Plugin
-Version: 0.9.16
+Version: 0.9.17
 License: GPLv2
 Author: Thomas Ehrhardt
 Author URI: http://www.powie.de
 */
 
 //Define some stuff
-define( 'PWHOIS_VERSION', '0.9.14');
+define( 'PWHOIS_VERSION', '0.9.17');
 define( 'PWHOIS_PLUGIN_DIR', dirname( plugin_basename( __FILE__ ) ) );
-//define( 'PL_PAGEPEEKER_URL', 'http://free.pagepeeker.com/v2/thumbs.php?size=%s&url=%s');
 load_plugin_textdomain( 'pwhois', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 //create custom plugin settings menu
@@ -39,6 +38,8 @@ function pwhois_register_settings() {
 	register_setting( 'pwhois-settings', 'display-on-invalid' );
 	register_setting( 'pwhois-settings', 'show-www' );
 	register_setting( 'pwhois-settings', 'show-whois-output' );
+	register_setting( 'pwhois-settings', 'before-whois-output' );
+	register_setting( 'pwhois-settings', 'after-whois-output' );
 }
 
 function pwhois_show( $atts ) {
@@ -128,7 +129,7 @@ function pwhois_post(){
 		//Ergebnis liefern
 		$msg = '<p>'.$msg.'</p>';
 		if (get_option('show-whois-output') == 1) {
-			$msg.='<code>'.nl2br($result).'</code>';
+			$msg.=get_option('before-whois-output').nl2br($result).get_option('after-whois-output');
 		}
 		$response = json_encode( array( 'success' => true , 'msg' => $msg ) );
 		header( "Content-Type: application/json" );
