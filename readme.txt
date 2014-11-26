@@ -3,8 +3,8 @@ Contributors: PowieT
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UST438WYW6HNJ
 Tags: domain,lookup,whois,shortcode
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 0.9.18
+Tested up to: 4.0.1
+Stable tag: 0.9.19
 License: GPLv2
 
 Check Domain WHOIS Lookup for availability. Simple insert the [pwhois] shortcode on a page or post
@@ -50,6 +50,9 @@ Post a comment on [powie.de Forum](http://forum.powie.de))
 Post it at my Forum: [powie.de Forum](http://forum.powie.de)
 
 == Changelog ==
+= 0.9.19 (26.11.2014) =
+* optimized free detection
+
 = 0.9.18 (30.06.2014) =
 * Added co.za lookups
 
