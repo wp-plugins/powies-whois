@@ -3,7 +3,7 @@ Contributors: PowieT
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UST438WYW6HNJ
 Tags: domain,lookup,whois,shortcode
 Requires at least: 3.0
-Tested up to: 4.0.1
+Tested up to: 4.2
 Stable tag: 0.9.19
 License: GPLv2
 
